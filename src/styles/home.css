@@ -1,0 +1,151 @@
+.home-page {
+  min-height: 100vh;
+  padding: 24px 5vw;
+  background: #f4f4f0;
+}
+
+.home-shell {
+  width: 100%;
+  max-width: 1180px;
+  min-height: calc(100vh - 48px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: #f4f4f0;
+}
+
+.site-header,
+.auth-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #111111;
+  padding: 12px 0 16px;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.auth-footer {
+  border-top: 1px solid #111111;
+  border-bottom: 0;
+  margin-top: auto;
+  padding: 16px 0 0;
+  color: #707070;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #111111;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand-mark {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  letter-spacing: -0.05em;
+  text-transform: none;
+}
+
+.header-index {
+  color: #707070;
+}
+
+.home-main {
+  flex: 1;
+  padding: 16vh 7vw 12vh;
+}
+
+.eyebrow {
+  margin: 0 0 24px;
+  color: #707070;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.home-main h1 {
+  max-width: 900px;
+  margin: 0;
+  color: #111111;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(54px, 8vw, 112px);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 0.93;
+  word-break: break-word;
+}
+
+.home-main h1 span {
+  font-style: italic;
+}
+
+.home-meta {
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 64px;
+  padding-top: 16px;
+  border-top: 1px solid #d8d8d2;
+  color: #707070;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.btn-logout {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #111111;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: gap 0.2s ease;
+}
+
+.btn-logout:hover {
+  gap: 24px;
+}
+
+@media (max-width: 760px) {
+  .home-page {
+    padding: 16px 20px;
+  }
+
+  .home-shell {
+    min-height: calc(100vh - 32px);
+  }
+
+  .header-index {
+    display: none;
+  }
+
+  .home-main {
+    padding: 18vh 0 12vh;
+  }
+
+  .home-main h1 {
+    font-size: clamp(54px, 17vw, 84px);
+  }
+
+  .home-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 28px;
+  }
+}
